@@ -18,14 +18,15 @@
       <form class="d-flex align-items-center">
         <input
           class="form-control mr-sm-2"
-          type="search"
+          type="text"
           placeholder="City name:"
           id="cityInput"
           aria-label="Search"
         />
         <button
+          onclick="searchWeather()"
           class="btn btn-outline-success my-2 my-sm-0 m-3"
-          type="submit"
+          type="button"
           id="citySearch"
         >
           Search
@@ -35,11 +36,11 @@
   </div>
 
   <body>
-
     <div class="container-fluid">
-    <div class="col-9">
-        <div class="card" style="width: 100%;" id="weatherContainer"></div>
-          <div id="forecastContainer"></div>
+      <div class="col-9">
+        <div class="card" style="width: 100%" id="weatherContainer"></div>
+        <div id="forecastContainer"></div>
+      </div>
     </div>
 
     <script>
@@ -49,5 +50,6 @@
         "sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL";
       crossorigin = "anonymous";
     </script>
+    <script src="assets/weather.js"></script>
   </body>
 </html>
