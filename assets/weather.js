@@ -1,6 +1,12 @@
 var cityname;
-var apiKey = "d5b8c2268b885aedb32b68ca6944722d"
+var apiKey = "d5b8c2268b885aedb32b68ca6944722d";
 var queryURL = `https://api.openweathermap.org/data/2.5/weather?q=" + cityname + "&units=imperial&appid=d5b8c2268b885aedb32b68ca6944722d`;
+
+document.getElementById('citySearch').addEventListener('click', function() {
+    var cityname = document.getElementById('cityInput').value;
+    latAndLong(cityname);
+});
+
 
 function latAndLong (cityname) {
 
@@ -15,8 +21,6 @@ function latAndLong (cityname) {
 
     })
 }
-
-latAndLong("Ogden");
 
 function fiveDayForecast (lat,lon) {
 
