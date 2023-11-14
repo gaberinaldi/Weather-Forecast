@@ -53,7 +53,7 @@ function fiveDayForecast (lat,lon) {
         // Day Two
         var dayTwo = data.list[8].dt_txt
         var iconTwo = data.list[8].weather[0].icon
-        var urlTwo = `http://openweathermap.org/img/w/${iconTwo}.png`;
+        var urlTwo = `https://openweathermap.org/img/w/${iconTwo}.png`;
         var secondTemp = data.list[8].main.temp
         var secondHumidity = data.list[8].main.humidity
         var secondWind = data.list[8].wind.speed
@@ -66,7 +66,7 @@ function fiveDayForecast (lat,lon) {
         // Day Three
         var dayThree = data.list[16].dt_txt
         var iconThree = data.list[16].weather[0].icon
-        var urlThree = `http://openweathermap.org/img/w/${iconThree}.png`;
+        var urlThree = `https://openweathermap.org/img/w/${iconThree}.png`;
         var thirdTemp = data.list[16].main.temp
         var thirdHumidity = data.list[16].main.humidity
         var thirdhWind = data.list[16].wind.speed
@@ -79,7 +79,7 @@ function fiveDayForecast (lat,lon) {
         // Day Four
         var dayFour = data.list[24].dt_txt
         var iconFour = data.list[24].weather[0].icon
-        var urlFour = `http://openweathermap.org/img/w/${iconFour}.png`;
+        var urlFour = `https://openweathermap.org/img/w/${iconFour}.png`;
         var fourthTemp = data.list[24].main.temp
         var fourthHumidity = data.list[24].main.humidity
         var fourthWind = data.list[24].wind.speed
@@ -92,7 +92,7 @@ function fiveDayForecast (lat,lon) {
         // Day Fifth
         var dayFive = data.list[32].dt_txt
         var iconFive = data.list[32].weather[0].icon
-        var urlFive = `http://openweathermap.org/img/w/${iconFive}.png`;
+        var urlFive = `https://openweathermap.org/img/w/${iconFive}.png`;
         var fifthTemp = data.list[32].main.temp
         var fifthHumidity = data.list[32].main.humidity
         var fifthWind = data.list[32].wind.speed
@@ -114,7 +114,7 @@ function currentWeather (cityname) {
     .then (function(data) {
         console.log(data)
         var imageLog = data.weather[0].icon
-        var iconURL = `http://openweathermap.org/img/w/${imageLog}.png`;
+        var iconURL = `https://openweathermap.org/img/w/${imageLog}.png`;
         document.getElementById('weatherIcon').src=iconURL
         var currentCity = data.name
         document.getElementById('city').innerHTML = currentCity
