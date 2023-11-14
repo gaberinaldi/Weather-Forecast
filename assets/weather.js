@@ -36,15 +36,70 @@ function fiveDayForecast (lat,lon) {
     })
     .then (function(data) {
         console.log(data)
+
+        // Day One
         var dayOne = data.list[0].dt_txt
+        var iconOne = data.list[0].weather[0].icon
+        var urlOne = `http://openweathermap.org/img/w/${iconOne}.png`;
+        var firstTemp = data.list[0].main.temp
+        var firstHumidity = data.list[0].main.humidity
+        var firstWind = data.list[0].wind.speed
+        document.getElementById('windOne').innerHTML = `Wind: ${firstWind} MPH`
+        document.getElementById('humidityOne').innerHTML = `Humidity: ${firstHumidity} %`
+        document.getElementById('tempOne').innerHTML = `Temp: ${firstTemp} F`
+        document.getElementById('firstIcon').src=urlOne
         document.getElementById('dateOne').innerHTML = dayOne
+
+        // Day Two
         var dayTwo = data.list[8].dt_txt
-        document.getElementById('dateTwo').innerHTML = dayTwo
+        var iconTwo = data.list[8].weather[0].icon
+        var urlTwo = `http://openweathermap.org/img/w/${iconTwo}.png`;
+        var secondTemp = data.list[8].main.temp
+        var secondHumidity = data.list[8].main.humidity
+        var secondWind = data.list[8].wind.speed
+        document.getElementById('windTwo').innerHTML = `Wind: ${secondWind} MPH`
+        document.getElementById('humidityTwo').innerHTML = `Humidity: ${secondHumidity} %`
+        document.getElementById('tempTwo').innerHTML = `Temp: ${secondTemp} F`
+        document.getElementById('secondIcon').src=urlTwo
+        document.getElementById('dateTwo').innerHTML = dayTwo       
+
+        // Day Three
         var dayThree = data.list[16].dt_txt
+        var iconThree = data.list[16].weather[0].icon
+        var urlThree = `http://openweathermap.org/img/w/${iconThree}.png`;
+        var thirdTemp = data.list[16].main.temp
+        var thirdHumidity = data.list[16].main.humidity
+        var thirdhWind = data.list[16].wind.speed
+        document.getElementById('windThree').innerHTML = `Wind: ${thirdhWind} MPH`
+        document.getElementById('humidityThree').innerHTML = `Humidity: ${thirdHumidity} %`
+        document.getElementById('tempThree').innerHTML = `Temp: ${thirdTemp} F`
+        document.getElementById('thirdIcon').src=urlThree
         document.getElementById('dateThree').innerHTML = dayThree
+
+        // Day Four
         var dayFour = data.list[24].dt_txt
+        var iconFour = data.list[24].weather[0].icon
+        var urlFour = `http://openweathermap.org/img/w/${iconFour}.png`;
+        var fourthTemp = data.list[24].main.temp
+        var fourthHumidity = data.list[24].main.humidity
+        var fourthWind = data.list[24].wind.speed
+        document.getElementById('windFour').innerHTML = `Wind: ${fourthWind} MPH`
+        document.getElementById('humidityFour').innerHTML = `Humidity: ${fourthHumidity} %`
+        document.getElementById('tempFour').innerHTML = `Temp: ${fourthTemp} F`
+        document.getElementById('fourthIcon').src=urlFour
         document.getElementById('dateFour').innerHTML = dayFour
-        var dayFive = data.list[8].dt_txt
+
+        // Day Fifth
+        var dayFive = data.list[32].dt_txt
+        var iconFive = data.list[32].weather[0].icon
+        var urlFive = `http://openweathermap.org/img/w/${iconFive}.png`;
+        var fifthTemp = data.list[32].main.temp
+        var fifthHumidity = data.list[32].main.humidity
+        var fifthWind = data.list[32].wind.speed
+        document.getElementById('windFive').innerHTML = `Wind: ${fifthWind} MPH`
+        document.getElementById('humidityFive').innerHTML = `Humidity: ${fifthHumidity} %`
+        document.getElementById('tempFive').innerHTML = `Temp: ${fifthTemp} F`
+        document.getElementById('fifthIcon').src=urlFive
         document.getElementById('dateFive').innerHTML = dayFive
     })
 }
@@ -74,4 +129,3 @@ function currentWeather (cityname) {
     })
 }
 
-//fixing error through github
