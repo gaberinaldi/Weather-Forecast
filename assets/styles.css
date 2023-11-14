@@ -9,8 +9,28 @@
     filter: drop-shadow(0px 0px 1px black)
   }
 
+  #firstIcon {
+    filter: drop-shadow(0px 0px 1px black)
+  }
+
+  #secondIcon {
+    filter: drop-shadow(0px 0px 1px black)
+  }
+
+  #thirdIcon {
+    filter: drop-shadow(0px 0px 1px black)
+  }
+
+  #fourthIcon {
+    filter: drop-shadow(0px 0px 1px black)
+  }
+
+  #fifthIcon {
+    filter: drop-shadow(0px 0px 1px black)
+  }
+
  #forecastContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
  } 
