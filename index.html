@@ -9,6 +9,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link href="assets/styles.css" rel="stylesheet" />
     <title>Weather Forecast</title>
   </head>
 
@@ -36,9 +37,37 @@
 
   <body>
     <div class="container-fluid">
-      <div class="col-9">
-        <div class="card" style="width: 100%" id="weatherContainer"></div>
-        <div id="forecastContainer"></div>
+      <div class="card mt-3 mx-auto" style="width: 100%" id="weatherContainer">
+        <div class="weatherHeader">
+          <h1 id="city" class="p-3"></h1>
+          <h1 id="date" class="p-3"></h1>
+          <div id="icon" class="p-2">
+            <img id="weatherIcon" src="" alt="Weather icon" />
+          </div>
+        </div>
+        <div class="currentStats">
+          <h4 id="temp" class="p-3"></h4>
+          <h4 id="humidity" class="p-3"></h4>
+          <h4 id="wind" class="p-3"></h4>
+        </div>
+      </div>
+      <h1>5-Day Forecast:</h1>
+      <div id="forecastContainer">
+        <div class="card mt-3 mx-auto" style="width: 20%" id="forecastOne">
+          <h4 id="dateOne"></h4>
+        </div>
+        <div class="card mt-3 mx-auto" style="width: 20%" id="forecastTwo">
+          <h4 id="dateTwo"></h4>
+        </div>
+        <div class="card mt-3 mx-auto" style="width: 20%" id="forecastThree">
+          <h4 id="dateThree"></h4>
+        </div>
+        <div class="card mt-3 mx-auto" style="width: 20%" id="forecastFour">
+          <h4 id="dateFour"></h4>
+        </div>
+        <div class="card mt-3 mx-auto" style="width: 20%" id="forecastFive">
+          <h4 id="dateFive"></h4>
+        </div>
       </div>
     </div>
 
