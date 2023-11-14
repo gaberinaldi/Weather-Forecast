@@ -33,4 +33,4 @@ Please refer to the LICENSE in the repo.
 
 ## Screenshot
 
-![Webpage screenshot](Weather.png)
+![webpage screenshot](Weather.png)
