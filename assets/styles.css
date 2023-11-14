@@ -1,7 +1,10 @@
+body {
+  background-color: white;
+}
+
 .weatherHeader {
     display: flex;
     flex-direction: row;
-    
   }
 
   #weatherIcon {
@@ -10,23 +13,23 @@
   }
 
   #firstIcon {
-    filter: drop-shadow(0px 0px 1px black)
+    filter: drop-shadow(0px 0px 1px white)
   }
 
   #secondIcon {
-    filter: drop-shadow(0px 0px 1px black)
+    filter: drop-shadow(0px 0px 1px white)
   }
 
   #thirdIcon {
-    filter: drop-shadow(0px 0px 1px black)
+    filter: drop-shadow(0px 0px 1px white)
   }
 
   #fourthIcon {
-    filter: drop-shadow(0px 0px 1px black)
+    filter: drop-shadow(0px 0px 1px white)
   }
 
   #fifthIcon {
-    filter: drop-shadow(0px 0px 1px black)
+    filter: drop-shadow(0px 0px 1px white)
   }
 
  #forecastContainer {
