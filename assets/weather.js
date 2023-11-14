@@ -73,3 +73,5 @@ function currentWeather (cityname) {
 
     })
 }
+
+//fixing error through github
