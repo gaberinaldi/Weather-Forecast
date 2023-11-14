@@ -14,7 +14,7 @@ document.getElementById('citySearch').addEventListener('click', function() {
 
 function latAndLong (cityname) {
 
-    var latURL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityname}&limit=1&appid=${apiKey}`;
+    var latURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityname}&limit=1&appid=${apiKey}`;
     fetch (latURL)
     .then (function(res) {
         return res.json();
