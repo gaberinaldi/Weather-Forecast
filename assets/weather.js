@@ -106,7 +106,7 @@ function fiveDayForecast (lat,lon) {
 
 function currentWeather (cityname) {
 
-    var queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityname}&units=imperial&appid=d5b8c2268b885aedb32b68ca6944722d`;
+    var queryURL = `http://api.openweathermap.org/data/2.5/weather?q=${cityname}&units=imperial&appid=d5b8c2268b885aedb32b68ca6944722d`;
     fetch (queryURL)
     .then (function(res) {
         return res.json();
