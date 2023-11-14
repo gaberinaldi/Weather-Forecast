@@ -40,7 +40,7 @@ function fiveDayForecast (lat,lon) {
         // Day One
         var dayOne = data.list[0].dt_txt
         var iconOne = data.list[0].weather[0].icon
-        var urlOne = `http://openweathermap.org/img/w/${iconOne}.png`;
+        var urlOne = `https://openweathermap.org/img/w/${iconOne}.png`;
         var firstTemp = data.list[0].main.temp
         var firstHumidity = data.list[0].main.humidity
         var firstWind = data.list[0].wind.speed
